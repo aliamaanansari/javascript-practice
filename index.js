@@ -535,8 +535,14 @@
 // console.log(addTwoInt(12,110))
 // 83. Write a JavaScript program to find the longest string from a given array of strings.
 
-function check(arr) {
-let str = arr.reduce((acc, cur) => acc.length > cur.length? acc: cur);
-return [str];
-};
-console.log(check(['a', 'aa', 'aaa', 'aaaaa','aaaa']));
+// function check(arr) {
+// let str = arr.reduce((acc, cur) => acc.length > cur.length? acc: cur);
+// return [str];
+// };
+// console.log(check(['a', 'aa', 'aaa', 'aaaaa','aaaa']));
+function add_two_digits(n)
+   {
+      return n % 10 + Math.floor(n / 10);
+   }
+console.log(add_two_digits(25))
+console.log(add_two_digits(50))
